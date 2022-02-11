@@ -1,11 +1,58 @@
-.via-widget {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 
-.via-widget > * {
+#via-widget-inner,
+#via-widget-inner * {
   box-sizing: border-box;
 }
 
-.via-logo {
+#via-widget-inner {
+  padding: 40px 10px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#via-title {
+  margin-bottom: 0.5em;
+  font-size: 40px;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+#via-status {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 23px;
+  color: #A09DA6;
+}
+
+#via-unit,
+#via-amount,
+#via-set {
+  color: #3DCF91
+}
+
+#via-prev-link {
+  text-decoration: none;
+}
+
+#via-prev {
+  max-width: 100%;
+  height: auto;
+}
+
+#via-mint-link {
+  text-decoration: none;
+}
+
+#via-mint {
+  margin-top: 24px;
+}
+
+#via-by {
+  font-size: 11px;
+  color: #A09DA6;
+}
+
+#via-logo {
   pointer-events: none;
 }
