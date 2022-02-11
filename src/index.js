@@ -57,3 +57,4 @@ function App({ title, amount, unit, set, id }) {
     </div>
   )
 }
+
