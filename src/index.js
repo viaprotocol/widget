@@ -15,14 +15,14 @@ ReactDOM.render(
       amount={widgetDiv.dataset.amount}
       unit={widgetDiv.dataset.unit}
       set={widgetDiv.dataset.set}
-      offerId={widgetDiv.dataset.offerId}
+      id={widgetDiv.dataset.id}
     />
   </React.StrictMode>,
   widgetDiv
 )
 
-function App({ title, amount, unit, set, offerId }) {
-  const go = `https://pay.via.exchange/nft/${offerId}`
+function App({ title, amount, unit, set, id }) {
+  const go = 'https://pay.via.exchange/nft/' + id
 
   return (
     <div id="via-widget-inner">
