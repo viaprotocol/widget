@@ -1,3 +1,3 @@
 # VIA Widget
 
-Usage example: `index.html`
+Usage example: `public/index.html`
