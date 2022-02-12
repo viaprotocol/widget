@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+#via-widget-inner a {
+  text-decoration: none;
+}
+
 #via-widget-inner {
   padding: 40px 10px;
   text-align: center;
@@ -40,15 +44,49 @@
   height: auto;
 }
 
-#via-mint-link {
+#via-mint-button {
+  margin-top: 24px;
+  /*display: inline-block;
+  width: 160px;*/
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #3DCF91;
+  border-radius: 8px;
+  padding: 6px 7px 6px 17px;
+  background-color: #15121D;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: center;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-#via-mint {
-  margin-top: 24px;
+#via-mint-button:hover {
+  background-color: #3dcf91;
+}
+
+#via-mint-button:active {
+  background-color: #339269;
+}
+
+#via-currencies {
+  height: 24px;
+  margin-left: 16px;
+}
+
+#via-currencies img {
+  display: inline-block;
+}
+
+#via-currencies img + img {
+  margin-left: -10px;
 }
 
 #via-by {
+  margin-top: 8px;
   font-size: 11px;
   color: #A09DA6;
 }

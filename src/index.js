@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom'
 
 import logo from './logo.svg'
 import prev from './prev.png'
-import mint from './mint.svg'
+
+import currencyETH from './currency-eth.svg'
+import currencyBNB from './currency-bnb.svg'
+import currencyMATIC from './currency-matic.svg'
+
 import './styles.css'
 
 const widgetDiv = document.getElementById('via-widget')
@@ -46,13 +50,21 @@ function App({ title, amount, unit, set, id }) {
       </div>
 
       <div>
-        <a id="via-mint-link" href={go} target="_blank" rel="noreferrer">
-          <img src={process.env.PUBLIC_URL + mint} id="via-mint" alt="prev" width="160" height="36" />
+        <a id="via-mint-button" href={go} target="_blank" rel="noreferrer">
+          <span>Mint now</span>
+          <span id="via-currencies">
+            <img src={process.env.PUBLIC_URL + currencyETH} alt="ETH" width="24" height="24" />
+            <img src={process.env.PUBLIC_URL + currencyBNB} alt="BNB" width="24" height="24" />
+            <img src={process.env.PUBLIC_URL + currencyMATIC} alt="MATIC" width="24" height="24" />
+          </span>
         </a>
       </div>
 
       <div id="via-by">
-        by&nbsp;&nbsp;<img src={process.env.PUBLIC_URL + logo} id="via-logo" alt="logo" />
+        <span>by&nbsp;&nbsp;</span>
+        <a href="https://via.exchange/" target="_blank" rel="noreferrer">
+          <img src={process.env.PUBLIC_URL + logo} id="via-logo" alt="logo" />
+        </a>
       </div>
     </div>
   )
