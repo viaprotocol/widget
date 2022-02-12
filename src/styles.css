@@ -10,7 +10,6 @@
 }
 
 #via-widget-inner {
-  padding: 40px 10px;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
 }
@@ -45,9 +44,6 @@
 }
 
 #via-mint-button {
-  margin-top: 24px;
-  /*display: inline-block;
-  width: 160px;*/
   display: inline-flex;
   align-items: center;
   border: 1px solid #3DCF91;
