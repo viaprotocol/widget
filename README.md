@@ -1,3 +1,3 @@
-# VIA Widget
+# Via Widget
 
 Usage example: [example/index.html](example/index.html)
