@@ -41,18 +41,18 @@ function App({ title, amount, unit, set, id }) {
 
       <div>
         <a id="via-prev-link" href={go} target="_blank" rel="noreferrer">
-          <img src={prev} id="via-prev" alt="prev" width="354" height="84" />
+          <img src={process.env.PUBLIC_URL + prev} id="via-prev" alt="prev" width="354" height="84" />
         </a>
       </div>
 
       <div>
         <a id="via-mint-link" href={go} target="_blank" rel="noreferrer">
-          <img src={mint} id="via-mint" alt="prev" width="160" height="36" />
+          <img src={process.env.PUBLIC_URL + mint} id="via-mint" alt="prev" width="160" height="36" />
         </a>
       </div>
 
       <div id="via-by">
-        by&nbsp;&nbsp;<img src={logo} id="via-logo" alt="logo" />
+        by&nbsp;&nbsp;<img src={process.env.PUBLIC_URL + logo} id="via-logo" alt="logo" />
       </div>
     </div>
   )
