@@ -9,16 +9,20 @@ import currencyMATIC from './currency-matic.svg'
 
 import './styles.css'
 
-const widgetDiv = document.getElementById('via-widget')
+// please don't remove `#via-widget` - it is in use
+const widgetDivs = document.querySelectorAll('#via-widget, .via-widget')
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App
-      id={widgetDiv.dataset.id}
-    />
-  </React.StrictMode>,
-  widgetDiv
-)
+widgetDivs.forEach(div => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App
+        id={div.dataset.id}
+      />
+    </React.StrictMode>,
+    div
+  )
+})
+
 
 function App({ title, amount, unit, set, id }) {
   const go = 'https://pay.via.exchange/nft/' + id
