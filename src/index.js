@@ -25,7 +25,11 @@ widgetDivs.forEach(div => {
 
 
 function App({ title, amount, unit, set, id }) {
-  const go = 'https://pay.via.exchange/nft/' + id
+  const urlParams = new URLSearchParams(window.location.search)
+  const ref = urlParams.get('ref')
+  const refUrlAddition = ref ? `?ref=${ref}` : ''
+
+  const go = 'https://pay.via.exchange/nft/' + id + refUrlAddition
 
   return (
     <div id="via-widget-inner">
