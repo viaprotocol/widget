@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
-#via-widget-inner a {
-  text-decoration: none;
-}
-
 #via-widget-inner {
+  width: 180px;
+  min-width: 180px;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
+}
+
+#via-widget-inner a {
+  text-decoration: none;
 }
 
 #via-title {
